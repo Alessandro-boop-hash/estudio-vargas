@@ -1,0 +1,1 @@
+{% extends 'casos/base.html' %}{% block contenido %}<h1>{{ titulo }}</h1><form method="post">{% csrf_token %}{{ form.as_p }}<button>Guardar</button> <a href="{% url 'clientes_lista' %}">Cancelar</a></form>{% endblock %}
